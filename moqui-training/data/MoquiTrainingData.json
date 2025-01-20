@@ -1,0 +1,18 @@
+[
+  {
+    "_entity": "MoquiTraining",
+    "trainingId": "4",
+    "trainingName": "c++",
+    "trainingDate": "2025-01-15",
+    "trainingPrice": 600.00,
+    "trainingDuration": 120
+  },
+  {
+    "_entity": "MoquiTraining",
+    "trainingId": "5",
+    "trainingName": "DSA c++",
+    "trainingDate": "2025-01-15",
+    "trainingPrice": 6100.00,
+    "trainingDuration": 200
+  }
+]
