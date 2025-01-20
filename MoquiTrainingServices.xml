@@ -1,0 +1,21 @@
+<services>
+    <!-- Fetch MoquiTraining Records -->
+    <service verb="fetch" noun="MoquiTraining" type="inline">
+        <in-parameters>
+            <parameter name="trainingName" type="String" required="false"/>
+            <parameter name="trainingId" type="String" required="false"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="trainingList" type="List"/>
+        </out-parameters>
+        <actions>
+            <entity-find entity-name="MoquiTraining" list="trainingList">
+                <econdition field-name="trainingName" value="trainingName" optional="true"/>
+                <econdition field-name="trainingId" value="trainingId" optional="true"/>
+                <select-field field-name="trainingId"/>
+                <select-field field-name="trainingName"/>
+                <select-field field-name="trainingDate"/>
+            </entity-find>
+        </actions>
+    </service>
+</services>
